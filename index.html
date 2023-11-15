@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hauptstädte-Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hauptstädte Quiz</h1>
+    </header>
+    <div class="quiz-container">
+    <div id="question"></div>
+    <div id="score">Punktzahl: 0</div>
+    <input type="text" id="answer" class="hidden" placeholder="Geben Sie die Hauptstadt ein...">
+    <div id="choices" class="hidden"></div>
+    <button class="button hidden" id="checkButton" onclick="checkAnswer()">Antwort überprüfen</button>
+    <button class="button hidden" id="nextButton" onclick="nextQuestion()">Nächste Frage</button>
+    <button class="button" id="toggleModeButton" onclick="toggleMode()">Modus wechseln</button>
+    <button class="button hidden" id="restartButton" onclick="restartQuiz()">Neustarten</button>
+    <div id="feedback"></div>
+    <script src="script.js"></script>
+</body>
+</html>
