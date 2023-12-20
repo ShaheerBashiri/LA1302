@@ -16,9 +16,9 @@ Wir haben uns überlegt, was wir für ein Projekt im LA machen könnten, was ein
 
 ### 1.1 Ihr Projekt
 
-Eine Seite auf welchem man ein Städte-Quiz spielen kann. Es soll Lehrreich sein, somit gibt es keine "Strafen" bei falschen Eingaben. Man wird gefragt was die Hauptstadt eines Landes ist, und kann die Antwort hineinschreiben und so Punkte sammeln.
+Eine Seite auf welchem man ein Städte-Quiz spielen kann. Es soll Lehrreich sein, somit gibt es keine "Strafen" bei falschen Eingaben aber die Punkte werden zurückgesetzt. Man wird gefragt was die Hauptstadt eines Landes ist, und kann die Antwort hineinschreiben oder clicken und so Punkte sammeln.
 
-Wir möchten üben Websiten mit Backend funktionen zu Programmieren. Also das verarbeiten von Eingaben und daraufentsprechende Antworten geben. Dies hat uns massiv im Modul 294 geholfen. 
+Wir möchten üben Websiten mit JavaScript zu Programmieren. Also das verarbeiten von Eingaben und daraufentsprechende Antworten geben. 
 
 ### 1.2 User Stories
 
@@ -29,7 +29,7 @@ Wir möchten üben Websiten mit Backend funktionen zu Programmieren. Also das ve
 |3|muss|qualität|Es wird einem gesagt was die richtige Lösung ist, falls die Antwort falsch wäre.|
 |4|kann|rand    |Es zählt wieviele Mal ich etwas richtig hatte mit einem Punktestand.|
 |5|kann| qualität|Ich kann meine Antwort nach erstmaliger Eingabe und Einreichen, überarbeiten und erneut einsenden.|
-|6|kann|  rand  |Ich bekommen trotz erstmaliger falschen Eingabe einen Punkt und kann weiter fahren.|
+|6|kann|  rand  |Ich kann weiter fahrenm wenn ich das falsche Antwort drücke.|
 |7|kann|  rand   |Ich erhalte keine Konsequenz bei Fehlern.|
 |8|kann|   qualität         |Ich kann den Modus ändern und zu Multiple-choice wechseln.|
 |9|muss|qualität|Es wird mir rot angezeigt wenn ich die falsche Stadt ausgesucht habe.|
