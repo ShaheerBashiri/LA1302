@@ -6,26 +6,36 @@
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
+|       | 0.0.1   | Projekt wählen, Informieren, Dokumentation gestartet |
 |       | ...     |                                                              |
 |       | 1.0.0   |                                                              |
 
 ## 1 Informieren
 
+Wir haben uns überlegt, was wir für ein Projekt im LA machen könnten, was einem unserer aktuellen Modulen entspricht. Dann haben wir geschaut wie wir das ganze Aufbauen und überhaupt machen würden. 
+
 ### 1.1 Ihr Projekt
 
-✍️ Beschreiben Sie Ihr Projekt in einem griffigen Satz.
+Eine Seite auf welchem man ein Städte-Quiz spielen kann. Es soll Lehrreich sein, somit gibt es keine "Strafen" bei falschen Eingaben. Man wird gefragt was die Hauptstadt eines Landes ist, und kann die Antwort hineinschreiben und so Punkte sammeln.
 
-✍️ Erklären Sie genauer in 50 bis 100 Wörtern, was genau Sie in diesem Projekt erreichen möchten, und was Sie dabei zu lernen hoffen.
+Wir möchten üben Websiten mit Backend funktionen zu Programmieren. Also das verarbeiten von Eingaben und daraufentsprechende Antworten geben. Dies hat uns massiv im Modul 294 geholfen. 
 
 ### 1.2 User Stories
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-| ...  |                 |      |                                    |
+| 1    |muss|funktional|Ich kann eine Eingabe tätigen |
+| 2 |muss|funktional| Diese Eingabe soll mit der Lösung überprüft werden.|     
+|3|muss|qualität|Es wird einem gesagt was die richtige Lösung ist, falls die Antwort falsch wäre.|
+|4|kann|rand    |Es zählt wieviele Mal ich etwas richtig hatte mit einem Punktestand.|
+|5|kann| qualität|Ich kann meine Antwort nach erstmaliger Eingabe und Einreichen, überarbeiten und erneut einsenden.|
+|6|kann|  rand  |Ich bekommen trotz erstmaliger falschen Eingabe einen Punkt und kann weiter fahren.|
+|7|kann|  rand   |Ich erhalte keine Konsequenz bei Fehlern.|
+|8|kann|   qualität         |Ich kann den Modus ändern und zu Multiple-choice wechseln.|
+|9|muss|qualität|Es wird mir rot angezeigt wenn ich die falsche Stadt ausgesucht habe.|
+|10|kann|qualität|Ich kann in der gleichen Frage so viele Optionen drücken bis ich die richtige Antwort habe, dieses grün leuchtet, ich einen Punkt erhalte, und dann zur nächsten Frage gehen kann|
+|11|muss|funktional|Alle Vorgehen, bis auf die Worteingabe, kann ich mit einem Klik betätigen|
 
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
 
 ### 1.3 Testfälle
 
@@ -36,35 +46,44 @@
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
-### 1.4 Diagramme
-
-✍️Fügen Sie hier ein Use Case-Diagramm mit mindestens 3 Anwendungsfällen ein; und eine Skizze davon, wie Ihre Netzseite aussehen sollte.
 
 ## 2 Planen
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |       |           |              |               |
-| ...  |       |           |              |               |
+| 1.A  |       |  Ava         |    Eingabe          |    20 min   |
+| 2.A  |       |   Ava        |  überprüfen            |    20 min           |
+|3.A||Ava|Offenbarung der Lösung|20 min|
+|4.A||Shaheer|Punktestand|40 min|
+|5.A||Shaheer|erneut eingeben|40 min|
+|6.A||Shaheer|trotz inkorrekter Eingabe Punkt|20 min|
+|8.A||Ava/Shaheer|Modus|180 min|
+|9.A||Ava|rote Anzeige bei falscher Stadt|40 min|
+|10.A||Shaheer|erneut Antwort wählen|30 min|
+
 
 Total: 
-
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
-
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
+10 Arbeitspakete
 
 ## 3 Entscheiden
 
-✍️ Dokumentieren Sie hier Ihre Entscheidungen und Annahmen, die Sie im Bezug auf Ihre User Stories und die Implementierung getroffen haben.
+Wir mussten uns dann schliesslich entscheiden welche Städte abgefragt werden, und diese haben wir dann ins Jsonfile reingetan. 
 
 ## 4 Realisieren
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |           |               |                   |
-| ...  |       |           |               |                   |
+| 1.A  |       |    Ava       |      20 min         |    15 min               |
+| 2.A |       |       Ava    |      20 min         |       35 min            |
+|3.A||Ava|20 min|30 min|
+|4.A||Shaheer|40 min|30 min|
+|5.A||Shaheer|40 min|40 min|
+|6.A||Shaheer|20 min| 25 min|
+|8.A||Ava/Shaheer|180 min|200 min|
+|9.A||Ava|40 min|35 min|
+|10.A||Shaheer|30 min|45 min|
 
-✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
+
 
 ## 5 Kontrollieren
 
@@ -73,8 +92,5 @@ Total:
 | 1.1  |       |          |        |
 | ...  |       |          |        |
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet
 
-## 6 Auswerten
-
-✍️ Fügen Sie hier eine Verknüpfung zu Ihrem Lern-Bericht ein.
